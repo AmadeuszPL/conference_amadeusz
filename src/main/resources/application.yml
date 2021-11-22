@@ -1,2 +1,13 @@
-server:
-  port: 5000
+spring:
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgres://vrpadhmvqzbhxs:e5a8aa3639c38f514cdd01cf8173442eaa593c1c6a9aa9838d32a3f164ada6c4@ec2-100-24-227-178.compute-1.amazonaws.com:5432/da5oi34gcjuuh2
+    username: vrpadhmvqzbhxs
+    password: e5a8aa3639c38f514cdd01cf8173442eaa593c1c6a9aa9838d32a3f164ada6c4
+    hikari:
+      auto-commit: false
